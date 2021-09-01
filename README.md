@@ -16,7 +16,7 @@
 
 ![](views/static/logo.png)
 
-A [Telegram Bot](https://telegram.me/MiddleManBot) to translate simple JSON HTTP requests into Telegram push messages that you will get on your Smartphone, PC or whatever Telegram client you have. Just like [Gotify](https://gotify.net/), but without an extra app.
+A [Telegram Bot](https://telegram.me/y9xbot) to translate simple JSON HTTP requests into Telegram push messages that you will get on your Smartphone, PC or whatever Telegram client you have. Just like [Gotify](https://gotify.net/), but without an extra app.
 
 ## Changelog
 ### 2020-12-05
@@ -57,7 +57,7 @@ One option is to simply use the hosted instance running at [https://apps.muetsch
 If you want to set this up on your own, do the following. You can either run the bot in long-polling- or webhook mode. For production use the latter option is recommended for [various reasons](https://core.telegram.org/bots/webhooks). However, you'll need a server with a static IP and s (self-signed) SSL certificate.
 
 #### Compile from source
-1. `git clone github.com/muety/webhook2telegram`
+1. `git clone https://github.com/ItsTrakos/webhook2telegram/`
 1. `GO111MODULE=on go build`
 1. Long-polling mode: `./webhook2telegram -token <YOUR_BOTFATHER_TOKEN>`
 1. Webhook mode: `./webhook2telegram -token <YOUR_BOTFATHER_TOKEN> -mode webhook`
@@ -132,4 +132,4 @@ Fundamental [Prometheus](https://prometheus) metrics are exposed under `/metrics
 * `webhook2telegram_requests_total{success="string"}` 
 
 ## License
-MIT @ [Ferdinand Mütsch](https://muetsch.io)
+MIT @ [Ferdinand Mütsch](https://trakos.tk/)
